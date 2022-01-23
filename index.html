@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main/main.css" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <title>Uzmovi</title>
+  </head>
+  <body>
+    <header></header>
+    <main class="main">
+      <h1 class="text-center mt-3 mb-4">Movies catalog</h1>
+      <section class="main-section container">
+        <div class="row">
+          <div class="film-left-top col-lg-3">
+            <form class="form">
+              <div class="input-group flex-nowrap">
+                <input
+                  type="text"
+                  class="form-control mb-4"
+                  placeholder="Kino nomini kiriting!"
+                  aria-label="Username"
+                  aria-describedby="addon-wrapping"
+                />
+              </div>
+              <div class="input-group flex-nowrap">
+                <input
+                  type="text"
+                  class="form-control mb-4"
+                  aria-label="Username"
+                  aria-describedby="addon-wrapping"
+                />
+              </div>
+
+              <select
+                class="form-select select mb-4"
+                aria-label="Default select example"
+              >
+                <option selected value="All">All</option>
+              </select>
+              <select
+                class="form-select mb-4"
+                aria-label="Default select example"
+              >
+                <option selected>Rating (high to low)</option>
+                <option value="1">High</option>
+                <option value="2">Low</option>
+              </select>
+
+              <button type="submit" class="btn btn-primary mb-4">
+                Qidirish
+              </button>
+            </form>
+
+            <h2 class="text-dark mb-3">Saqlangan filmlar</h2>
+
+            <ul class="booked-films rounded mb-5 w-100"></ul>
+          </div>
+
+          <div class="col-lg-9">
+            <p class="d-inline-block">
+              Search Result: <span class="movies-result">0</span>
+            </p>
+            <p class="alert-info d-block p-2 rounded">
+              Use the form on the left to search movie
+            </p>
+
+            <ul class="movies__list"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/movies-new.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
